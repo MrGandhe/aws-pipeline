@@ -23,6 +23,4 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.REGION }}
 
-     - name: Copy files to the production website with the AWS CLI
-        run: |
-        aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
+
